@@ -204,6 +204,7 @@ sample_prog.py
 
 # Figures and pictures
 *.png
+*.pov
 
 # data files
 *.dat

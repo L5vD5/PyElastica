@@ -13,7 +13,7 @@ Notes
 
 import sys
 
-sys.path.append("../../../")
+sys.path.append("/home/l5vd5/Dev/soro/PyElastica/")
 
 import multiprocessing
 import os
@@ -26,6 +26,9 @@ from scipy import interpolate
 from tqdm import tqdm
 
 from examples.Visualization._povmacros import Stages, pyelastica_rod, render
+
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 # Setup (USER DEFINE)
 DATA_PATH = "continuum_snake.dat"  # Path to the simulation data
