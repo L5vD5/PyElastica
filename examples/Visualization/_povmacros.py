@@ -115,15 +115,16 @@ def render(
     # Run Povray as subprocess
     cmds = [
         "povray",
-        "+I" + script_file,
-        "+O" + image_file,
+        f"+I" + script_file,
+        f"+O" + image_file,
         f"-H{height}",
         f"-W{width}",
-        f"Work_Threads={pov_thread}",
         f"Antialias={antialias}",
         f"Quality={quality}",
         f"Display={display}",
+        # f"Work_Threads={pov_thread}",
     ]
+    print(cmds)
     process = subprocess.Popen(
         cmds, stderr=subprocess.PIPE, stdin=subprocess.PIPE, stdout=subprocess.PIPE
     )
