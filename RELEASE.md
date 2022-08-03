@@ -1,3 +1,47 @@
+# Release Note (version 0.2.4)
+
+## What's Changed
+
+* Refactor EndPointForcesSinusoidal example and test cases by @armantekinalp in https://github.com/GazzolaLab/PyElastica/pull/110
+* Fix save_every condition in ExportCallBack by @mstoelzle in https://github.com/GazzolaLab/PyElastica/pull/125
+* Fix and update contact examples by @armantekinalp in https://github.com/GazzolaLab/PyElastica/pull/109
+* Update rigid body rod contact by @armantekinalp in https://github.com/GazzolaLab/PyElastica/pull/117
+* Update rigid body rod contact friction by @armantekinalp in https://github.com/GazzolaLab/PyElastica/pull/124
+* Update ExportCallback by @skim0119 in https://github.com/GazzolaLab/PyElastica/pull/130
+
+## New Contributors
+
+* @mstoelzle made their first contribution in https://github.com/GazzolaLab/PyElastica/pull/125
+
+---
+
+# Release Note (version 0.2.3)
+
+## Developer Note
+The major updates are knot theory module added to the Cosserat rod as *mixin*, and muscular snake example is added. 
+
+## Notable Changes
+- #70: Knot theory module to compute topological quantities.
+- #71: Reorganize rod constructor warning messages and collect messages in log.  
+- #72: Muscular snake example is added.
+
+---
+
+# Release Note (version 0.2.2)
+
+## Developer Note
+
+The major documentation update is finished in this version.
+Constraint and finalize module are refactored to enhance readability.
+
+## Notable Changes
+- #64: Core wrapper redesign. The finalizing code is refactored for easier integration.
+- #65: Documentation update.
+- #56: Constraint module has been refactored to include proper abstract base class. Additionally, new `FixedConstraint` is added for generalized fixed boundary condition.
+- More test cases are added to increase code-coverage.
+
+---
+
 # Release Note (version 0.2.1)
 
 ## Developer Note
