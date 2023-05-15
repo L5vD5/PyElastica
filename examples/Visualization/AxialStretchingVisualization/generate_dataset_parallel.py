@@ -103,7 +103,7 @@ def simulate(torques):
     # torques = [14.20097808, 5.76058777, 2.91217993, 7.76707398]
     # torques = [0.0, 0.0, 0.0, -10.0]
 
-    # X 방향
+    # X axis
     snake_sim.add_forcing_to(shearable_rod).using(
         UniformTorques, torque = -torques[0], direction=np.array([-0.075, 0, 0.0375])
     )
@@ -111,7 +111,7 @@ def simulate(torques):
         UniformTorques, torque = +torques[0], direction=np.array([-0.075, 0, -0.0375])
     )
 
-    # Z 방향
+    # Z axis
     snake_sim.add_forcing_to(shearable_rod).using(
         UniformTorques, torque = +torques[1], direction=np.array([0.0375, 0, -0.075])
     )
@@ -168,7 +168,7 @@ def simulate(torques):
 
     # file.close()
     
-    return pp_list['position'][-1].swapaxes(0,1)/10
+    return pp_list['position'][-1].swapaxes(0,1)
 
 if __name__ == "__main__":
     ray.init()
